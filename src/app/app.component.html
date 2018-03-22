@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div *ngIf="title; then tmp1 else tmp2"></div>
+<ng-template #tmp1>True</ng-template>
+<ng-template #tmp2>False</ng-template>
+<app-my-new-component></app-my-new-component>
+
+<img src="{{angularLogo}}">
+<img [src]="angularLogo">
+<img bind-src="angularLogo">
+
+<button  (click)="myEvent($event)">My Button</button>
+
+<div>{{someProperty}}</div>
+
+<p [@testAnimation]='state' (click)="animateMe()">I will animate</p>
